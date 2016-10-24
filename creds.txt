@@ -7,4 +7,6 @@ user 1:
 
 
 user 2:
-  - name: 
+- name: Test Owner
+- user: owner@gmail.com
+- passwd: 123456
