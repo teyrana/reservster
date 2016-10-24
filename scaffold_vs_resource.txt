@@ -1,0 +1,33 @@
+      invoke  active_record					      invoke  active_record
+      create    db/migrate/20161024161737_create_restaurants. |	      create    db/migrate/20161024161642_create_restaurants.
+      create    app/models/restaurant.rb			      create    app/models/restaurant.rb
+      invoke    test_unit					      invoke    test_unit
+      create      test/models/restaurant_test.rb		      create      test/models/restaurant_test.rb
+      create      test/fixtures/restaurants.yml			      create      test/fixtures/restaurants.yml
+      invoke  resource_route				      |	      invoke  controller
+       route    resources :restaurants			      <
+      invoke  scaffold_controller			      <
+      create    app/controllers/restaurants_controller.rb	      create    app/controllers/restaurants_controller.rb
+      invoke    erb						      invoke    erb
+      create      app/views/restaurants				      create      app/views/restaurants
+      create      app/views/restaurants/index.html.erb	      <
+      create      app/views/restaurants/edit.html.erb	      <
+      create      app/views/restaurants/show.html.erb	      <
+      create      app/views/restaurants/new.html.erb	      <
+      create      app/views/restaurants/_form.html.erb	      <
+      invoke    test_unit					      invoke    test_unit
+      create      test/controllers/restaurants_controller_tes	      create      test/controllers/restaurants_controller_tes
+      invoke    helper						      invoke    helper
+      create      app/helpers/restaurants_helper.rb		      create      app/helpers/restaurants_helper.rb
+      invoke      test_unit					      invoke      test_unit
+      invoke    jbuilder				      <
+      create      app/views/restaurants/index.json.jbuilder   <
+      create      app/views/restaurants/show.json.jbuilder    <
+      create      app/views/restaurants/_restaurant.json.jbui <
+      invoke  assets						      invoke    assets
+      invoke    coffee						      invoke      coffee
+      create      app/assets/javascripts/restaurants.coffee	      create        app/assets/javascripts/restaurants.coffee
+      invoke    scss						      invoke      scss
+      create      app/assets/stylesheets/restaurants.scss	      create        app/assets/stylesheets/restaurants.scss
+      invoke  scss					      |	      invoke  resource_route
+      create    app/assets/stylesheets/scaffolds.scss	      |	       route    resources :restaurants
