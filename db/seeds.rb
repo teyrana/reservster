@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+# Roles are primarily for permissions
+Role.create( name: 'Normal', is_owner: false)
+Role.create( name: 'Owner', is_owner: true)

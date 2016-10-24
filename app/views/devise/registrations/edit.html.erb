@@ -18,8 +18,14 @@
         <%= f.email_field :email, class: "form-control" %>
       </div>
 
-      <%= f.label :current_password %>
-      <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
+      <div class="form-group">
+        <%= f.collection_select( :Role, Role.all, :id, :name, prompt: true)%>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :current_password %>
+        <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
+      </div>
 
       <div class="actions">
         <%= f.submit "Update" %>

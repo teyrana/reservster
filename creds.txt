@@ -1,2 +1,10 @@
-user: test@gmail.com
-pswd: 123456
+
+user 1:
+----
+  - name: test user
+  - user: test@gmail.com
+  - passwd: 123456
+
+
+user 2:
+  - name: 

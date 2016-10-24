@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20161024013746) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "name"
-    t.boolean  "is_owner"
+    t.boolean  "is_owner", default: false
   end
 
   create_table "users", force: :cascade do |t|
